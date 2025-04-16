@@ -1,67 +1,31 @@
-// variables.c
+// sizeof_types.c
 #include <stdio.h>
 
 int main() {
-    // Déclaration et affectation des variables
+    // Affichage des tailles des types de base
+    printf("Taille de char : %zu octet(s)\n", sizeof(char));
+    printf("Taille de signed char : %zu octet(s)\n", sizeof(signed char));
+    printf("Taille de unsigned char : %zu octet(s)\n\n", sizeof(unsigned char));
 
-    // char
-    char c = 'A';
-    signed char sc = -65;
-    unsigned char uc = 200;
+    printf("Taille de short : %zu octet(s)\n", sizeof(short));
+    printf("Taille de signed short : %zu octet(s)\n", sizeof(signed short));
+    printf("Taille de unsigned short : %zu octet(s)\n\n", sizeof(unsigned short));
 
-    // short
-    short s = -12345;
-    signed short ss = -123;
-    unsigned short us = 12345;
+    printf("Taille de int : %zu octet(s)\n", sizeof(int));
+    printf("Taille de signed int : %zu octet(s)\n", sizeof(signed int));
+    printf("Taille de unsigned int : %zu octet(s)\n\n", sizeof(unsigned int));
 
-    // int
-    int i = -100000;
-    signed int si = -50000;
-    unsigned int ui = 100000;
+    printf("Taille de long int : %zu octet(s)\n", sizeof(long int));
+    printf("Taille de signed long int : %zu octet(s)\n", sizeof(signed long int));
+    printf("Taille de unsigned long int : %zu octet(s)\n\n", sizeof(unsigned long int));
 
-    // long int
-    long int li = -1000000L;
-    signed long int sli = -2000000L;
-    unsigned long int uli = 3000000UL;
+    printf("Taille de long long int : %zu octet(s)\n", sizeof(long long int));
+    printf("Taille de signed long long int : %zu octet(s)\n", sizeof(signed long long int));
+    printf("Taille de unsigned long long int : %zu octet(s)\n\n", sizeof(unsigned long long int));
 
-    // long long int
-    long long int lli = -9000000000LL;
-    signed long long int slli = -8000000000LL;
-    unsigned long long int ulli = 9000000000ULL;
-
-    // float
-    float f = 3.14f;
-
-    // double
-    double d = 2.718281828;
-
-    // long double
-    long double ld = 1.6180339887L;
-
-    // Affichage des variables
-    printf("char : %c\n", c);
-    printf("signed char : %d\n", sc);
-    printf("unsigned char : %u\n\n", uc);
-
-    printf("short : %hd\n", s);
-    printf("signed short : %hd\n", ss);
-    printf("unsigned short : %hu\n\n", us);
-
-    printf("int : %d\n", i);
-    printf("signed int : %d\n", si);
-    printf("unsigned int : %u\n\n", ui);
-
-    printf("long int : %ld\n", li);
-    printf("signed long int : %ld\n", sli);
-    printf("unsigned long int : %lu\n\n", uli);
-
-    printf("long long int : %lld\n", lli);
-    printf("signed long long int : %lld\n", slli);
-    printf("unsigned long long int : %llu\n\n", ulli);
-
-    printf("float : %.2f\n", f);
-    printf("double : %.9f\n", d);
-    printf("long double : %.10Lf\n", ld);
+    printf("Taille de float : %zu octet(s)\n", sizeof(float));
+    printf("Taille de double : %zu octet(s)\n", sizeof(double));
+    printf("Taille de long double : %zu octet(s)\n", sizeof(long double));
 
     return 0;
 }
