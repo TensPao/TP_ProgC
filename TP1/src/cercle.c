@@ -5,7 +5,7 @@ int main() {
     double rayon;
     double aire, perimetre;
 
-    // Valeur du rayon (vous pouvez aussi utiliser scanf si vous voulez le lire depuis l'utilisateur)
+    // Valeur du rayon 
     rayon = 5.0; // Exemple : rayon de 5.0
 
     // Calculs
